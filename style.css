@@ -4,29 +4,26 @@ a {
 }
 ul{
   list-style: none;
-  padding: 0;
-  margin-top: 25px;
-  font-size: 13px;
-  font-family: arial,sans-serif;
-  color: rgba(0,0,0,0.87);
-  cursor: pointer;
 }
-li:hover{
+.navbar li:hover{
   text-decoration: underline;
 }
 .navbar {
   display: flex;
   justify-content: flex-end;
   padding: 0px 30px;
+  margin-top: 25px;
+  font-size: 13px;
+  font-family: arial,sans-serif;
+  color: rgba(0,0,0,0.87);
+  cursor: pointer;
 }
-li{
+.navbar li{
   padding-right: 15px;
 }
-html{
+html, body{
   height: 100%;
-}
-body{
-  height: 100%;
+  margin : 0;
 }
 main{
   height: 50%;
@@ -37,12 +34,10 @@ main{
   align-items: center;
   flex-direction: column;
 }
-.logo{
-
-}
 .search input {
   width: 450px;
   height: 35px;
+  padding-left:15px;
 }
 .search{
   margin : 30px 0 30px 0;
@@ -95,4 +90,31 @@ box-shadow: 1px 1px 5px grey;
 .offered a:hover {
   text-decoration: underline;
 }
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
 
+footer{
+  margin-top:auto; 
+  display:flex;
+  justify-content:space-between;
+  font-size: 14px;
+  background: #f2f2f2;
+  min-width: 980px;
+  border-top: 1px solid #e4e4e4;
+}
+.footer-left{
+  display:flex;
+}
+.footer-right{
+  display:flex;
+}
+footer div p {
+  padding : 0 10px;
+  color: #5f6368;
+}
+footer div p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
